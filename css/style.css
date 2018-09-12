@@ -1,0 +1,88 @@
+
+.chat-content{
+    padding: 10px 15px; 
+    border-radius: 20px;
+    font-weight: 400;
+    word-break: break-word;
+}
+.from-bot.chat-content{
+    border-bottom-left-radius: 0 !important;
+    background-color:#f6f9fa;  
+  
+}
+.from-user.chat-content{
+    border-bottom-right-radius: 0 !important;
+    background-color:#f36;
+    color: white;
+}
+.input-textbox-wrapper{
+    border-color:grey;
+    border-radius: 10px;
+
+}
+.send-icon-wrapper{
+bottom:0;
+top:0;
+right:0;
+border-left:1px solid lightgrey;
+padding:8px;
+cursor: pointer;
+}
+.input-textbox-wrapper input:focus{
+    box-shadow: none;
+}
+.loader-image{
+    margin:0 10px;
+}
+
+/* feedback */
+.custom-badge{
+    padding:10px 13px;
+    border: 1px solid #f36;
+    color: #f36;
+    background-color: white !important;
+    margin-right:5px;
+}
+.custom-badge:hover,.custom-badge:focus{
+    background-color: #f36 !important;
+    color: white !important;
+}
+.rating-container{
+    margin-top:-30px;
+}
+.feedbackBot-container{
+    max-width: 350px !important;
+}
+.feedbackBot-container iframe{
+    border-radius: 10px;
+}
+.bottom-container{
+    max-width: 350px !important;
+}
+/*  */
+
+/*css for admin.html*/
+.adminBody{
+    background-color:#e7ecea;          
+        color: #74777b;
+        font-family: 'Raleway', Arial, sans-serif !Important;
+}
+.adminNavbar{
+    background-color:#e7ecea; 
+}
+.mainHeader{
+    font-weight: 800;
+}
+.subHeader{
+    font-weight: 400;
+    color:#bdc2c9;
+}
+.subHeaderColor{
+    color:#bdc2c9;
+}
+.adminContainer{
+    background-color: white;
+    margin-top: 77px;
+    padding:20px;
+}
+/* */

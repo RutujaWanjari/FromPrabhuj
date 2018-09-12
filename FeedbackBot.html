@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/star-rating.min.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+   
+  </head>
+  <body>              
+                <nav class="navbar fixed-top navbar-light bg-light justify-content-center">
+                                <a class="navbar-brand" href="#">
+                                  <img src="images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+                                  
+                                </a>
+                              </nav>
+      <div class="container-fluid mt-5">
+        <div class="row justify-content-center pt-5">
+                       
+                <div class="col main-container feedbackBot-container">                               
+                        <div  class="row " id="chat-row">
+                                        
+                                <div class="col pb-3 pt-1 ">
+                                        <div class="row">
+                                              <div class="col chat-box" id="chat-container">
+                                                        
+                                                  
+                                              </div>
+                                        </div>
+                                    </div>
+                        </div>
+                          
+                </div>
+        </div>
+      </div>
+      <div class="container-fluid fixed-bottom pb-3"style="background-color: #fff;">
+                <div class="row justify-content-center"  id="input-row">
+                                <div class="col pb-3" style=" max-width:350px">
+                                        <div class="row">
+                                              <div class="col">
+                                                              <div class="col border p-1 input-textbox-wrapper">
+                                                                              <input type="text" class="form-control input-textbox border-0 pr-5" id="fromUserInput"/>
+                                                                              <div class="send-icon-wrapper position-absolute" onclick="sendMessage()" id="sendButton">
+                                                                                      <img src="images/sendIcon.png" class="send-icon" height="30"  width="30"/>
+                                                                              </div>
+                                                                      </div>
+                                                                     
+                                              </div>
+                                        </div>
+                                        <div class="row mt-3 text-center optionsRow" style="display:none">
+                                               
+
+
+                                                 
+                                                                                        
+                                        </div>
+                                         
+                                  </div>
+                           </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="scripts/jquery-3.1.0.js"></script>
+<script src="scripts/popper.min.js" ></script>
+<script src="scripts/bootstrap.min.js" ></script>
+<script src="scripts/feedback.js"></script>
+<script src="scripts/star-rating.js"></script>
+<script>
+        var i=0;
+        $(function(){
+                $("#rating").rating();
+                adjustHeight(0);
+                receiveMessage("Hi, WELCOME TO <strong>XYZ Restaurant</strong>");
+                i++;
+                setTimeout(function(){
+                        receiveMessage("How did you feel about the taste & quality of the food?","","rating");
+                 i++;               
+                },1000)
+                
+        })
+        $(window).resize(function(){
+                adjustHeight(0);
+});
+      
+</script>
+         </body>
+</html>

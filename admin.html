@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/color.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+  </head>
+  <body class="adminBody">
+        <nav class="navbar fixed-top  navbar-light justify-content-center adminNavbar">
+                <a class="navbar-brand" href="#">
+                  <img src="images/completeLogo.png" width="" height="50" class="d-inline-block align-top" alt="">
+                  
+                </a>
+              </nav>
+      <div class="container adminContainer">
+            <h1 class="mainHeader">Text Analysis Platform</h1>
+            <p class="subHeader">Artificial Intelligence applied to build custom NLP model for Text Analysis</p>
+            <ul class="nav nav-tabs AdminTabs nav-fill nav-pills mt-5" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#train" role="tab" aria-controls="home" aria-selected="true">
+                        <span>
+                            <i class='fas fa-tachometer-alt'></i>
+                        </span>  
+                        Train</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#evaluate" role="tab" aria-controls="profile" aria-selected="false">
+                            <span>
+                                    <i class='fas fa-tasks'></i>
+                                </span>   
+                        Evaluate</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#deploy" role="tab" aria-controls="contact" aria-selected="false">
+                            <span>
+                                    <i class='fas fa-rocket'></i>
+                                </span>  
+                        Deploy</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="train" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="col">
+                                    <form action="" class="needs-validation" novalidate>
+                                            <div class="form-group mt-5 mb-3">
+                                                    <h5 class="card-title text-center subHeaderColor" >
+                                                            Train the model by providing question-answer.
+                                                        </h5>
+                                                        <div class="row justify-content-center">
+                                                                <div class="custom-control custom-radio custom-control-inline">
+                                                                        <input type="radio" id="radio1" name="category" class="custom-control-input">
+                                                                        <label class="custom-control-label" for="radio1">Bollywood</label>
+                                                                      </div>
+                                                        </div>
+                                                    <div class="row mt-3">
+                                                           
+                                                            <div class="col-md-6 mb-2">
+                                                                    <textarea class="form-control" name="que" rows="5" placeholder="Input the question here" required></textarea>
+                                                                    <div class="invalid-feedback">
+                                                                            Question is required
+                                                                          </div>
+                                                            </div>
+                                                            <div class="col-md-6 mb-2">
+                                                                    <textarea class="form-control" name="ans" rows="5" placeholder="Input it's answer" required></textarea>
+                                                                    <div class="invalid-feedback">
+                                                                           Answer is required
+                                                                          </div>
+                                                            </div>
+                                                          </div>
+                                                          <div class="row justify-content-center mt-3">
+                                                                <button class="btn btn-primary" type="submit">Submit Document</button>
+
+                                                          </div>
+                                            </div>
+                                                
+                                            
+                                        </form>
+                            </div>
+                    </div>
+                    <div class="tab-pane fade" id="evaluate" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="col">
+                                    <form action="" class="needs-validation" novalidate>
+                                            <div class="form-group mt-5 mb-3">
+                                                    <h5 class="card-title text-center subHeaderColor">
+                                                            Evaluate the model by asking question. This section gives you answer plus score of a question. A score defines the maximum match percentage of a given question with the one trained in the model previously
+                                                        </h5>
+                                                        <div class="row justify-content-center">
+                                                                <div class="custom-control custom-radio custom-control-inline">
+                                                                        <input type="radio" id="radio4" name="category1" class="custom-control-input">
+                                                                        <label class="custom-control-label" for="radio4">Bollywood</label>
+                                                                      </div>
+                                                        </div>
+                                                    <div class="row mt-3 align-items-center">
+                                                            <div class="col-md-5">
+                                                                    <textarea class="form-control"  name="que" rows="5" placeholder="Input the question here" required></textarea>
+                                                                    <div class="invalid-feedback">
+                                                                            Question is required
+                                                                          </div>
+                                                            </div>
+                                                            <div class="col-md-2 mt-2 mb-2 text-center">
+                                                                    <button class="btn btn-primary" type="submit">Get Result</button>
+                                                            </div>
+                                                            <div class="col-md-5">
+                                                                    <textarea class="form-control" readonly name="ans" rows="5" placeholder="This is the predicted answer"></textarea>
+                                                            </div>
+                                                          </div>
+                                                          
+                                            </div>
+                                            
+                                                
+                                    </form>
+                            </div>
+                    </div>
+                    <div class="tab-pane fade" id="deploy" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="col">
+                                    <form action="">
+                                            <div class="form-group mt-5 mb-3">
+                                                    <h5 class="card-title text-center subHeaderColor">
+                                                            Have a look on how your bot got trained.
+                                                        </h5>
+                                                    
+                                                          <div class="row justify-content-center mt-3">
+                                                          <button class="btn btn-primary" type="submit">Fanbot</button>
+                                                          <button class="btn btn-primary ml-5" type="submit">Feedback bot</button> 
+
+                                                          </div>
+                                            </div>
+                                            
+                                                
+                                    </form>
+                            </div></div>
+                        
+                  </div>
+                  
+      </div>
+      <div class="container pb-3 mt-5" >
+            <div class="row justify-content-center ">
+                    <p class="text-black-50 text-center">Copyright © 2018 soulputs.com. All Rights Reserved.</p>
+            </div>
+             
+      </div>
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Enter code</h5>
+                  
+                </div>
+                <form class="needs-validation" novalidate id="code">
+                        <div class="modal-body">
+                                <input type="text" id="codeSubmit" class="form-control" required placeholder="Enter code"/>
+                                <div class="invalid-feedback">
+                                        Enter a valid code
+                                      </div>
+                              </div>
+                              <div class="modal-footer">                  
+                                <input type="submit" class="btn btn-primary"  value="Continue"/>
+                              </div>
+                </form>
+              </div>
+            </div>
+          </div>
+    <script src="scripts/jquery-3.1.0.js"></script>
+    <script src="scripts/popper.min.js" ></script>
+    <script src="scripts/bootstrap.min.js" ></script>
+    <script src="scripts/admin.js"></script>
+    </body>
+    </html>

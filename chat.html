@@ -1,28 +1,28 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Soulputs - AI Solutions</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <link rel="stylesheet" href="css/style.css" >
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css" />
+      <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
   </head>
   <body>
-        <nav class="navbar fixed-top navbar-light bg-light justify-content-center">
-                <a class="navbar-brand" href="#">
-                  <img src="images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
-                  
-                </a>
-              </nav>
+    <nav class="navbar fixed-top navbar-light bg-light justify-content-center">
+    <a class="navbar-brand" href="#">
+    <img src="../static/images/logo.png" class="d-inline-block align-top" alt="">
+
+    </a>
+    </nav>
       <div class="container-fluid mt-5 pb-5 mb-5">
           <div class="row justify-content-center pt-5">
                 <div class="col-md-6 col-lg-4 chat-box" id="chat-container" style="max-width:450px">
                     <div class="row justify-content-start">
                             <div class="col-10 chat-element mt-2 ">
-                                    <img width="40" height="40" class="rounded-circle" src="https://cdn.askarvi.com/images/umbrella_inverted.png" />
+                                    <img width="40" height="40" class="rounded-circle" src="../static/images/bot.jpg" />
                                     
                                             <div class="from-bot chat-content d-inline-block">
                                                     Hello
@@ -33,9 +33,9 @@
                     <div class="row justify-content-end">
                             <div class="col-10 chat-element mt-2 text-right">
                                     
-                                    <div class="from-user chat-content d-inline-block">
-                                            Hello
-                                        </div>
+                                    <!--<div class="from-user chat-content d-inline-block">-->
+                                            <!--Hello-->
+                                        <!--</div>-->
                            
                         </div>
                     </div>
@@ -46,9 +46,9 @@
           <div class="row justify-content-center ">
                 <div class="col-md-6 col-lg-4 " style="max-width:450px">
                                 <div class="col border p-1 input-textbox-wrapper">
-                                                <input type="text" class="form-control input-textbox border-0 pr-5" id="fromUserInput"/>
+                                                <input type="text" class="form-control input-textbox border-0 pr-5" style="color: #00c1ad;" id="fromUserInput"/>
                                                 <div class="send-icon-wrapper position-absolute" onclick="sendMessage()" id="sendButton">
-                                                        <img src="images/sendIcon.png" class="send-icon" height="30"  width="30"/>
+                                                        <img src="../static/images/sendIcon.png" class="send-icon" height="30"  width="30"/>
                                                 </div>
                                         </div>
                 </div>
@@ -57,9 +57,9 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="scripts/jquery-3.1.0.js"></script>
-<script src="scripts/popper.min.js" ></script>
-<script src="scripts/bootstrap.min.js" ></script>
-<script src="scripts/chat.js"></script>
+<script src="../static/js/jquery-3.1.0.js"></script>
+<script src="../static/js/popper.min.js" ></script>
+<script src="../static/js/bootstrap.min.js" ></script>
+<script src="../static/js/chat.js"></script>
          </body>
 </html>
